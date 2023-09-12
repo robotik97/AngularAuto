@@ -16,6 +16,9 @@
         <li *ngFor='let opt of options'>  {{opt}} </li>
     </ul>
 </div>
-
+<h5>Select auto:</h5>
+<button class="btn btn-danger" (click)="carSelect('Honda')">Honda</button>
+<button class="btn btn-success"(click)="carSelect('Audi')">Audi</button>
+<button class="btn btn-info" (click)="carSelect('BMW')">BMW</button>
 </div>
 
