@@ -10,15 +10,15 @@
       <li>Whells color: <strong>{{ colors.wheels }}</strong></li>
     </ul>
   </div>
-  <form>
-    <h3>Editing car characteristics</h3>
+  <h3>Editing car characteristics</h3>
+  <button type="submit" class="btn btn-warning"(click)="showEdit()">edit</button>
+  <form *ngIf="isEdit">    
     <div class="form-group">
        <input type="text" class="form-control" placeholder="car brand" [(ngModel)]="name" name="name"> <br>
        <input type="number" class="form-control" placeholder="speed" [(ngModel)]="speed" name="speed"><br>
        <input type="text" class="form-control" placeholder="car color" [(ngModel)]="colors.car" name="carColor"><br>
        <input type="text" class="form-control" placeholder="salon color" [(ngModel)]="colors.salon" name="salonColor"><br>
        <input type="text" class="form-control" placeholder="whells color" [(ngModel)]="colors.wheels" name="wheelsColor">
-      <button type="submit" class="btn btn-outline-success">edit</button>
     </div>
   </form>
   <h5>Auto options:</h5>

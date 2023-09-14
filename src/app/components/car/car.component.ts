@@ -11,6 +11,7 @@ export class CarComponent implements OnInit {
   speed!: number;
   colors!: Colors;
   options!: string[];
+  isEdit: boolean=false;
 
   constructor() {}
 
@@ -76,6 +77,9 @@ export class CarComponent implements OnInit {
         break;
       }
     }
+  }
+  showEdit(){
+    this.isEdit=!this.isEdit
   }
 }
 
